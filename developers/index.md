@@ -99,6 +99,11 @@ This script is specific for binding addons. Follow these steps to generate your 
 
 1. Accept with `Y` when the skeleton configuration asks for it.
 
+1. Add a new entry in the file `openhab-addons/bundles/pom.xml` with your binding-name in the right alphabetical order
+```bash
+    <module>org.openhab.binding.mynewbinding</module>    
+ ```
+
 1. From `openhab-addons` root you can build only your binding with maven using the `-pl` option:
 
     ```bash
